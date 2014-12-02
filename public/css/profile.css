@@ -1,0 +1,164 @@
+.profile-page {
+	margin: 0 auto;
+	padding: 30px 30px 120px 30px;
+	max-width: 1200px;
+}
+.profile-box {
+	background: url("/images/profile_header.png") repeat-x top left rgba(255,255,255,0.9);
+	padding: 30px;
+}
+
+.profile-box .box {
+	display: block;
+	margin-bottom: 48px;
+	padding-bottom: 24px;
+	border-bottom: 1px solid #ccc;
+	clear: both;
+	overflow: hidden;
+	transition: all 1s;
+}
+.profile-box .box:before {
+	content: " ";
+	display: table;
+}
+.profile-box .box:after {
+	content: " ";
+	clear: both;
+}
+.profile-header {
+	margin-top: 60px;
+}
+.profile-header .my-contact {
+	overflow: hidden;
+	zoom: 1;
+}
+.profile-header .my-contact li {
+	display: block;
+	float: left;
+	zoom: 1;
+	text-align: center;
+	margin-right: 30px;
+}
+.profile-header .my-contact img, 
+.profile-header .my-contact a {
+	display: block;
+	margin-bottom: 10px;
+}
+.profile-header .my-contact a {
+	font-size: 12px;
+	font-weight: lighter;
+}
+.profile-header .my-contact img {
+	height: 160px;
+}
+.profile-box h2 {
+	font-size: 24px;
+	color: #555;
+	margin-bottom: 16px;
+	font-weight: normal;
+}
+.profile-box .box-title,
+.profile-box .box-content {
+	position: relative;
+	padding: 0 20px;
+	min-height: 1px;
+	transition: all 0.5s;
+}
+.profile-box .box-title {
+	width: 25%;
+	float: left;
+	font-weight: normal;
+	text-transform: uppercase;
+	font-size: 18px;
+	white-space: nowrap;
+}
+.profile-box .box-title .cover {
+	display: block;
+	border-radius: 50%;
+	width: 160px;
+}
+.profile-box .box-content {
+	width: 75%;
+	float: right;
+}
+.profile-box .box-title span {
+	border-bottom: 3px solid #1abc9c;
+	padding-bottom: 6px;
+	line-height: 30px;
+}
+.profile-box .box-sub-title {
+	font-size: 24px;
+	line-height: 28px;
+}
+.profile-box .info {
+	color: #6E7881;
+	margin-bottom: 18px;
+	margin-top: 9px;
+}
+.profile-box .info span {
+	padding: 0 5px;
+}
+.profile-box .box-content li {
+	margin-bottom: 30px;
+}
+.profile-box .box-content .tags {
+	overflow: hidden;
+}
+.profile-box .box-content .tag {
+	display: block;
+	white-space: nowrap;
+	margin: 6px 12px 6px 0;
+	background: rgba(0,0,0,0.1);
+	color: #fff;
+	padding: 1px 12px;
+	border-radius: 2px;
+	position: relative;
+	height: 20px;
+	line-height: 20px;
+	float: left;
+	width: 30%;
+}
+.profile-box .box-content .tag a {
+	display: block;
+	z-index: 11;
+}
+.profile-box .box-content .tag span {
+	position: absolute;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: #1abc9c;
+	z-index: 0;
+	padding-left: 10px;
+}
+
+
+@media screen and (max-width: 900px) {
+	.profile-box .box-title,
+	.profile-box .box-content {
+		float: none;
+		clear: both;
+		width: 100%;
+	}
+
+	.profile-box .box-title {
+		margin-bottom: 50px;
+		font-size: 24px;
+	}
+
+	.profile-box .box-sub-title {
+		font-size: 20px;
+	}
+
+	.profile-box .box-content .tag {
+		width: 100%;
+		margin-right: 0;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.profile-page {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+}

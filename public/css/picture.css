@@ -1,0 +1,99 @@
+.picturue-header {
+	display: block;
+	width: 100%;
+	position: fixed;
+	left: 42px;
+	top: 0;
+	height: 20px;
+	display: none;
+	background: url("/images/profile_header.png") repeat-x top;
+}
+.picture {
+	padding: 30px 30px 160px 30px;
+
+}
+.picture .list {
+	padding: 10px;
+	background: rgba(255,255,255,0.2);
+	border: 1px solid rgba(255,255,255,0.2);
+	overflow: hidden;
+}
+.picture .list li {
+	float: left;
+	padding: 10px;
+	width: 12.5%;
+	transition: all 0.9s;
+	min-height: 60px;
+}
+/*.picture .list .animated {
+	opacity: 0;
+}*/
+.picture .list img {
+	display: block;
+	width: 100%;
+	border: 1px solid rgba(255,255,255,0.2);
+	background: rgba(255,255,255,0.4);
+	padding: 4px;
+	transition: all 0.3s;
+}
+.picture .list img:hover {
+	background: rgba(255,255,255,0.6);
+	box-shadow: 0 0 10px rgba(0,0,0,0.9)
+}
+
+@media screen and (min-width: 1600px) {
+	.picture .list li {
+		width: 10%;
+	}
+	.picture .list img {
+	}
+}
+
+@media screen and (max-width: 1440px) {
+	.picture .list li {
+		width: 12.4%;
+	}
+	.picture .list img {
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	.picture .list li {
+		width: 14.2857143%;
+	}
+	.picture .list img {
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.picture .list li {
+		width: 20%;
+	}
+	.picture .list img {
+	}
+}
+
+@media screen and (max-width: 840px) {
+	.picture .list li {
+		width: 25%;
+	}
+	.picture .list img {
+		padding: 0;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.picture {
+		padding: 30px 5px 160px 5px;
+	}
+	.picture .list {
+		padding: 3px;
+	}
+	.picture .list li {
+		width: 33.33%;
+		padding: 3px;
+	}
+	.picture .list img {
+		padding: 0;
+	}
+}
